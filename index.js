@@ -1,12 +1,35 @@
+// ORIGINAL
+// function addingEventListener() {
+//     const input = document.getElementById('input');
+// }
+
+// function clickAlert() {
+//     alert('I was clicked!')
+// }
+
+// input.addingEventListener('click', clickAlert);
+
+// FIRST TRY
+// function addingEventListener() {
+//     const input = document.getElementById('button');
+//     input.addEventListener('click', function() {
+//     alert('I was clicked!');
+// });
+// }
+
+// function clickAlert() {
+//     alert('I was clicked!')
+// }
+
+// addEventListener('click', clickAlert);
+
+// SECOND TRY
 function addingEventListener() {
     const input = document.getElementById('input');
+    input.addEventListener('click', function (){
+        alert('I was clicked!')
+    });
 }
-
-function clickAlert() {
-    alert('I was clicked!')
-}
-
-input.addingEventListener('click', clickAlert);
 
 function moveDodferLeft() {
     const leftNumbers = dodger.style.left.replace("px", "");
